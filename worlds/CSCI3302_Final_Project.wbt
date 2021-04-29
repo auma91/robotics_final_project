@@ -1,0 +1,155 @@
+#VRML_SIM R2021a utf8
+WorldInfo {
+  info [
+    "CSCI 3302 Lab 4: Mapping"
+    "Prof. Brad Hayes, University of Colorado Boulder, Fall 2020"
+  ]
+  title "E-Puck"
+  coordinateSystem "NUE"
+  lineScale 0.04
+}
+Viewpoint {
+  orientation 0.4566537271625878 -0.8702575063324236 -0.18471395762255932 5.4130009686969105
+  position 8.946859956235608 4.833803188117173 9.736428290115203
+}
+TexturedBackground {
+}
+TiagoSteel {
+  translation 6.134412640377909 0.08159631502993661 3.6050275416603146
+  rotation -0.028636795366735267 0.6967348872724011 0.71675688403296 3.04173
+  controller "image_recognize_test"
+  cameraSlot [
+    Compass {
+    }
+    GPS {
+    }
+    Display {
+      width 210
+      height 210
+    }
+    Camera {
+      translation 0 -0.7 0
+      rotation 0 1 0 -1.5708
+      recognition Recognition {
+      }
+    }
+  ]
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  translation 3.5 0 3.5
+  floorSize 7 7
+  floorTileSize 1 1
+  floorAppearance PBRAppearance {
+    baseColor 0.9 0.9 0.6
+    roughness 0.2
+    metalness 0
+  }
+  wallHeight 0.5
+}
+CardboardBox {
+  translation 5.09 0.12 3.58
+  size 0.5 0.4 0.5
+}
+DEF BLUE_BOX Solid {
+  translation 3.07717 0.197534 5.78909
+  rotation -0.08579874315208541 0.9944159813355458 0.06144454197067495 -1.301472808508556e-15
+  scale 4 4 4
+  children [
+    DEF Cylinder Shape {
+      appearance PBRAppearance {
+        baseColor 0 0 0.8
+        roughness 1
+      }
+      geometry Cylinder {
+        height 0.1
+        radius 0.05
+      }
+    }
+  ]
+  name "solid(5)"
+  boundingObject USE Cylinder
+  physics Physics {
+  }
+  radarCrossSection 1
+  recognitionColors [
+    0 0 1
+  ]
+}
+DEF GREEN_BOX Solid {
+  translation 4.19166 0.19969068799805334 0.76871
+  rotation -0.015916722912751015 0.9998634704082022 -0.004438296405698001 -4.152674349189481e-15
+  scale 4 4 4
+  children [
+    DEF Cylinder Shape {
+      appearance PBRAppearance {
+        baseColor 0 0.8 0
+        roughness 1
+      }
+      geometry Cylinder {
+        height 0.1
+        radius 0.05
+      }
+    }
+  ]
+  name "solid(6)"
+  boundingObject USE Cylinder
+  physics Physics {
+  }
+  radarCrossSection 1
+  recognitionColors [
+    0 1 0
+  ]
+}
+DEF GREEN_BOX Solid {
+  translation 5.20166 0.379691 3.53871
+  rotation -0.015916722912751015 0.9998634704082022 -0.004438296405698001 -4.152674349189481e-15
+  scale 0.52 0.52 0.52
+  children [
+    DEF Cylinder Shape {
+      appearance PBRAppearance {
+        baseColor 0 0.8 0
+        roughness 1
+      }
+      geometry Cylinder {
+        height 0.1
+        radius 0.05
+      }
+    }
+  ]
+  name "solid(2)"
+  boundingObject USE Cylinder
+  physics Physics {
+  }
+  radarCrossSection 1
+  recognitionColors [
+    0 1 0
+  ]
+}
+DEF RED_BOX Solid {
+  translation 3.8534 0.19969068798419565 6.115168486514785
+  rotation -0.9999999912583386 -0.00010229112212279843 8.378453931085136e-05 -1.9450581371539638e-12
+  scale 4 4 4
+  children [
+    DEF Cylinder Shape {
+      appearance PBRAppearance {
+        baseColor 0.8 0 0
+        roughness 1
+      }
+      geometry Cylinder {
+        height 0.1
+        radius 0.05
+      }
+    }
+  ]
+  name "solid(1)"
+  boundingObject USE Cylinder
+  physics Physics {
+  }
+  radarCrossSection 1
+  recognitionColors [
+    1 0 0
+    0 0 0
+  ]
+}
