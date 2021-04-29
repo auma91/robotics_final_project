@@ -37,6 +37,7 @@ my_chain = Chain.from_urdf_file(filename, last_link_vector=vector, base_elements
 
 print(my_chain.links)
 
+hands = ("gripper_left_finger_joint", "gripper_right_finger_joint")
 
 part_names = ("head_2_joint", "head_1_joint", "torso_lift_joint", "arm_1_joint",
 			"arm_2_joint",  "arm_3_joint",  "arm_4_joint",      "arm_5_joint",

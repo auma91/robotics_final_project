@@ -9,8 +9,8 @@ WorldInfo {
   lineScale 0.04
 }
 Viewpoint {
-  orientation 0.4566537271625878 -0.8702575063324236 -0.18471395762255932 5.4130009686969105
-  position 8.946859956235608 4.833803188117173 9.736428290115203
+  orientation 0.5807069927994781 0.7909430794842125 0.19284302821159413 5.488172026953243
+  position -1.1309501109848479 5.680280097746927 12.037156874692048
 }
 TexturedBackground {
 }
@@ -28,8 +28,10 @@ TiagoSteel {
       height 210
     }
     Camera {
-      translation 0 -0.7 0
+      translation 0 -0.5 0
       rotation 0 1 0 -1.5708
+      width 128
+      height 128
       recognition Recognition {
       }
     }
@@ -53,7 +55,7 @@ CardboardBox {
   size 0.5 0.4 0.5
 }
 DEF BLUE_BOX Solid {
-  translation 3.07717 0.197534 5.78909
+  translation 3.07717 0.197534 3.88909
   rotation -0.08579874315208541 0.9944159813355458 0.06144454197067495 -1.301472808508556e-15
   scale 4 4 4
   children [
@@ -128,7 +130,7 @@ DEF GREEN_BOX Solid {
   ]
 }
 DEF RED_BOX Solid {
-  translation 3.8534 0.19969068798419565 6.115168486514785
+  translation 3.8534 0.199691 5.34517
   rotation -0.9999999912583386 -0.00010229112212279843 8.378453931085136e-05 -1.9450581371539638e-12
   scale 4 4 4
   children [
